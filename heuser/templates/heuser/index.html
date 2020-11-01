@@ -4,6 +4,7 @@
 
 
 {% block nav %}
+<!--
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <a href="" class="navbar-brand">Song suchen</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar6">
@@ -12,27 +13,32 @@
     <div class="navbar-collapse collapse justify-content-stretch" id="navbar6">
     </div>
 </nav>
+-->
 {% endblock %}
 
 {% block content %}
 <content>
-    <div class="container min-100 d-flex flex-column" >
+    <div class="container-fluid min-100 d-flex flex-column" >
         <div class="row flex-grow-1 min-100 special">
             <div class="col p-4 flex-grow-1 bg-class">
                 <div class="row" >
                     <div class="col-sm text-white">
-                        <center><h2> Offizielles Songarchiv des Liedermachers Björn Heuser</h2></center>
+                        <center><h2> Weihnachtskonzert 2020 von Björn Heuser</h2></center>
                     </div>
                 </div>
                 <div class="form-group row">
-                   <div class="col-12">
+                    <div class="col"></div>
+                    <div class="col-10">
+                        <center>
                         <video-js
                             id="heuser"
                             class="vjs-default-skin"
                             controls
                             preload="auto"
-                            width="640"
-                            height="268"
+                            autoplay="true"
+                            poster="/static/heuser/images/album_weihnachtsjefoehl.jpg"
+                            width="768"
+                            height="480"
                            >
                             <source src="https://nginx2.nk-streaming.de/hls/heuser/index.m3u8" type="application/x-mpegURL" />
                             <p class="vjs-no-js">
@@ -42,15 +48,16 @@
                                 >supports HTML5 video</a
                               >
                             </p>
-                          </video-js>
-
+                        </video-js>
+                        </center>
                           <script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
                           <script src="https://unpkg.com/@videojs/http-streaming/dist/videojs-http-streaming.js"></script>
 
                           <script>
                             var player = videojs('heuser');
                           </script>
-                   </div>
+                    </div>
+                    <div class="col"></div>
                 </div>
             </div>
         </div>
