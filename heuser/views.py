@@ -6,4 +6,4 @@ def index(request):
     return render(request, 'heuser/index.html')
 
 def hls(request):
-    return HttpResponse()
+    return HttpResponse('Hallo Welt')
