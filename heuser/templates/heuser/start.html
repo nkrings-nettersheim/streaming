@@ -1,10 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
+
+  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 </head>
+
 <body>
-<h1>Hallo Norbert</h1>
+<h1>Hallo Video</h1>
+  <video-js
+    id="heuser"
+    class="vjs-default-skin"
+    controls
+    preload="auto"
+    width="640"
+    height="268"
+   >
+    <source src="https://nginx2.nk-streaming.de/hls/heuser/index.m3u8" type="application/x-mpegURL" />
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video-js>
+
+  <script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
+  <script src="https://unpkg.com/@videojs/http-streaming/dist/videojs-http-streaming.js"></script>
+
+  <script>
+    var player = videojs('heuser');
+  </script>
 </body>
-</html>
