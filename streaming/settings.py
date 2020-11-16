@@ -40,7 +40,7 @@ SECRET_KEY = get_secret('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['168.119.156.85', 'www.nk-streaming.de', 'nk-streaming.de', 'nginx2.nk-streaming.de']
+ALLOWED_HOSTS = ['168.119.156.85', 'www.nk-streaming.de', 'nk-streaming.de', 'nginx1.nk-streaming.de']
 
 # Application definition
 
